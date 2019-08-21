@@ -1,0 +1,78 @@
+body {
+        /* Background pattern from Toptal Subtle Patterns */
+      background-color: aliceblue;
+      background-image: url('./background.png');
+      background-repeat: repeat;
+      font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  footer{
+      text-align:center;
+      text-transform: uppercase;
+      color: gray;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 12px;
+  }
+  
+  .navigation {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .contact {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    color: hsla(207, 100%, 33%,0.7);
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  h2 {
+    color:  hsla(207, 100%, 20%,0.7);
+    font-size: 20px;
+    line-height: 48px;
+    padding: 20px 30px;
+    margin: 30px 20px;
+    text-align: center;
+  }
+  
+  p {
+    color: grey;
+    text-align: center;
+    font-size: 16px;
+    line-height: 48px;
+    margin-top: 60px;
+    padding: 10px 20px;
+  }
+
+  img {
+    border-radius: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.75;
+    height: 400px;
+  }
+
+  a:link, a:visited {
+    color: hsla(207, 50%, 20%,0.7);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+  }
+  
+  a:hover, a:active {
+    color: hsla(207, 100%, 20%,0.7);
+  }
