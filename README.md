@@ -1,5 +1,5 @@
-# Eilidh MacNicol
-## MRC PhD Candidate
+# Eilidh MacNicol, PhD
+## Postdoctoral Research Associate
 ### Institute of Psychiatry, Psychology and Neuroscience
 ### King's College London
 
