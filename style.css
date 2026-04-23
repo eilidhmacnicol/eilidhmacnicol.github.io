@@ -262,6 +262,41 @@ section[id] { scroll-margin-top: var(--nav-height); }
   .research-grid { grid-template-columns: 1fr; }
 }
 
+/* ── Technical Toolkit ──────────────────────────────────── */
+#toolkit { background: var(--nord0); }
+
+.toolkit-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md) var(--space-lg);
+}
+
+.toolkit-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--nord9);
+  margin-bottom: var(--space-xs);
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.825rem;
+  color: var(--nord8);
+  border: 1px solid var(--nord8);
+  background: color-mix(in srgb, var(--nord8) 8%, transparent);
+}
+
 /* ── Footer ─────────────────────────────────────────────── */
 footer {
   padding: var(--space-md) 0;
