@@ -297,6 +297,173 @@ section[id] { scroll-margin-top: var(--nav-height); }
   background: color-mix(in srgb, var(--nord8) 8%, transparent);
 }
 
+/* ── Publications ───────────────────────────────────────── */
+#publications { background: var(--nord1); }
+
+.publications-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.publications-header .section-heading { margin-bottom: 0; }
+
+.scholar-link {
+  font-size: 0.875rem;
+  color: var(--nord9);
+  white-space: nowrap;
+}
+
+.scholar-link .ai { margin-left: 0.25rem; }
+
+.publications-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.pub-title {
+  color: var(--nord6);
+  font-weight: 500;
+  display: block;
+}
+
+.pub-title[href]:hover { color: var(--nord8); }
+
+.pub-meta {
+  font-size: 0.875rem;
+  color: var(--nord3);
+  margin-top: 0.15rem;
+}
+
+.pub-loading {
+  color: var(--nord3);
+  font-style: italic;
+}
+
+/* ── Open Source / Software ─────────────────────────────── */
+#software { background: var(--nord0); }
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.software-card {
+  background: var(--nord1);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  border-top: 3px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.software-card--authored { border-top-color: var(--nord14); }
+.software-card--contrib  { border-top-color: var(--nord8); }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+}
+
+.card-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--nord6);
+}
+
+.card-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.card-badge--authored {
+  background: color-mix(in srgb, var(--nord14) 20%, transparent);
+  color: var(--nord14);
+}
+
+.card-badge--contrib {
+  background: color-mix(in srgb, var(--nord8) 15%, transparent);
+  color: var(--nord8);
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--nord4);
+  flex: 1;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card-link {
+  font-size: 0.825rem;
+  color: var(--nord9);
+}
+
+.card-link:hover { color: var(--nord8); }
+.card-link .fab  { margin-right: 0.3rem; }
+
+.card-link--secondary {
+  color: var(--nord3);
+  font-size: 0.775rem;
+}
+
+.card-link--secondary:hover { color: var(--nord9); }
+
+@media (max-width: 768px) {
+  .software-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .software-grid { grid-template-columns: 1fr; }
+}
+
+/* ── About / Contact ────────────────────────────────────── */
+#about { background: var(--nord1); }
+
+.about-note {
+  font-size: 1.05rem;
+  color: var(--nord4);
+  max-width: 55ch;
+  margin-bottom: var(--space-md);
+}
+
+.contact-row {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-link {
+  font-size: 1.75rem;
+  color: var(--nord3);
+  display: inline-flex;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.contact-link:hover {
+  color: var(--nord8);
+  transform: translateY(-2px);
+}
+
 /* ── Footer ─────────────────────────────────────────────── */
 footer {
   padding: var(--space-md) 0;
