@@ -464,8 +464,20 @@ section[id] { scroll-margin-top: var(--nav-height); }
   transform: translateY(-2px);
 }
 
+/* ── Section background alternation ─────────────────────── */
+/* hero:         nord0  (set on #hero)          */
+/* research:     nord1  (set on #research)      */
+/* toolkit:      nord0  (set on #toolkit)       */
+/* publications: nord1  (set on #publications)  */
+/* software:     nord0  (set on #software)      */
+/* about:        nord1  (set on #about)         */
+
+/* All section backgrounds are already set above.          */
+/* This rule ensures the footer matches the final section. */
+
 /* ── Footer ─────────────────────────────────────────────── */
 footer {
+  background: var(--nord1);
   padding: var(--space-md) 0;
   text-align: center;
   font-size: 0.875rem;
