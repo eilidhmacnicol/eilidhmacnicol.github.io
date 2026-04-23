@@ -234,6 +234,34 @@ section[id] { scroll-margin-top: var(--nav-height); }
   .hero-ctas { justify-content: center; }
 }
 
+/* ── Research Themes ────────────────────────────────────── */
+#research { background: var(--nord1); }
+
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.research-label {
+  font-size: 0.775rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--nord8);
+  margin-bottom: var(--space-sm);
+}
+
+.research-card p {
+  color: var(--nord4);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 640px) {
+  .research-grid { grid-template-columns: 1fr; }
+}
+
 /* ── Footer ─────────────────────────────────────────────── */
 footer {
   padding: var(--space-md) 0;
