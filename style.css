@@ -267,8 +267,20 @@ section[id] { scroll-margin-top: var(--nav-height); }
 
 .toolkit-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md) var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .toolkit-groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .toolkit-groups {
+    grid-template-columns: 1fr;
+  }
 }
 
 .toolkit-label {
@@ -364,8 +376,9 @@ section[id] { scroll-margin-top: var(--nav-height); }
   gap: var(--space-xs);
 }
 
-.software-card--authored { border-top-color: var(--nord14); }
-.software-card--contrib  { border-top-color: var(--nord8); }
+.software-card--authored    { border-top-color: var(--nord14); }
+.software-card--maintainer { border-top-color: var(--nord15); }
+.software-card--contrib    { border-top-color: var(--nord8); }
 
 .card-header {
   display: flex;
@@ -393,6 +406,11 @@ section[id] { scroll-margin-top: var(--nav-height); }
 .card-badge--authored {
   background: color-mix(in srgb, var(--nord14) 20%, transparent);
   color: var(--nord14);
+}
+
+.card-badge--maintainer {
+  background: color-mix(in srgb, var(--nord15) 20%, transparent);
+  color: var(--nord15);
 }
 
 .card-badge--contrib {
