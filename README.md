@@ -6,7 +6,9 @@ Postdoctoral Research Associate in Neuroimaging, King's College London / IoPPN.
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--3715--7012-a6ce39?style=flat-square&logo=orcid)](https://orcid.org/0000-0003-3715-7012)
 [![GitHub](https://img.shields.io/badge/GitHub-eilidhmacnicol-181717?style=flat-square&logo=github)](https://github.com/eilidhmacnicol)
 
-I devise translational analysis approaches for MRI studies (f/phMRI, ASL, structural) and encourage improved modelling in wet-lab techniques like autoradiography, IHC, and HPLC. 
+I devise translational analysis approaches for multimodal MRI studies (f/phMRI, ASL, structural) and encourage improved modelling in wet-lab techniques like autoradiography, IHC, and HPLC.
+
+These methods are applied in various contexts, including healthy ageing, disease models, and drug discovery.
 
 I'm a steering committee member for [NiPreps](https://nipreps.org), a community that champions reproducible neuroimaging preprocessing pipelines.
 
