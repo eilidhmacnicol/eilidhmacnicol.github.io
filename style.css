@@ -352,6 +352,22 @@ section[id] { scroll-margin-top: var(--nav-height); }
   margin-top: 0.15rem;
 }
 
+.pub-doi {
+  font-size: 0.75rem;
+  color: var(--nord4);
+  border: 1px solid var(--nord3);
+  border-radius: 3px;
+  padding: 0 0.3em;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.pub-doi:hover {
+  color: var(--nord8);
+  border-color: var(--nord8);
+}
+
 .pub-loading {
   color: var(--nord3);
   font-style: italic;

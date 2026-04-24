@@ -177,7 +177,11 @@ async function loadPublications() {
       ? `<a class="pub-title" href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">${title}</a>`
       : `<span class="pub-title">${title}</span>`;
 
-    const meta = [authors, journal, year ? `(${year})` : ''].filter(Boolean).join(' — ');
+    const venue = [journal, year].filter(Boolean).join(' ');
+    const doiEl = doi
+      ? ` <a class="pub-doi" href="https://doi.org/${doi}" target="_blank" rel="noopener noreferrer">DOI</a>`
+      : '';
+    const meta = [authors, venue].filter(Boolean).join(' — ') + doiEl;
 
     return `<li><div class="pub-entry">${titleEl}<div class="pub-meta">${meta}</div></div></li>`;
   }).join('');
