@@ -267,7 +267,7 @@ section[id] { scroll-margin-top: var(--nav-height); }
 
 .toolkit-groups {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md) var(--space-lg);
 }
 
